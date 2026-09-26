@@ -1,0 +1,3 @@
+#!/bin/bash
+NAME=$(printf '*\\\047"Best School"\047\\*$?*****:)')
+echo "Best School" > "$NAME"
