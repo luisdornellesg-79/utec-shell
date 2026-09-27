@@ -1,2 +1,4 @@
 #!/bin/bash
-echo "$PATH" | tr ':' '\n' | wc -l
+p="${PATH//::/:.:}"
+p="${p//::/:.:}"
+echo "$p" | tr ':' '\n' | wc -l
