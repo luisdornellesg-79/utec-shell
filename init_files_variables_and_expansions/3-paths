@@ -1,3 +1,3 @@
 #!/bin/bash
-IFS=: set -- $PATH
+set -- ${PATH//:/ }
 echo $#
