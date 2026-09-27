@@ -1,3 +1,2 @@
 #!/bin/bash
-set -- ${PATH//:/ }
-echo $#
+(IFS=:; set -- $PATH; echo $#)
