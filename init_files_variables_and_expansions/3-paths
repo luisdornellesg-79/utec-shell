@@ -1,4 +1,2 @@
 #!/bin/bash
-p="${PATH//::/:.:}"
-p="${p//::/:.:}"
-echo "$p" | tr ':' '\n' | wc -l
+IFS=: set -- $PATH; echo $#
